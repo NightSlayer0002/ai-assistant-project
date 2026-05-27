@@ -45,8 +45,8 @@ ai-assistant-project/
 
 ### Prerequisites
 - Python 3.10+
-- Google AI API key → [Get free key](https://aistudio.google.com/apikey)
-- HuggingFace API key → [Get free key](https://huggingface.co/settings/tokens)
+- Google AI API key -> [Get free key](https://aistudio.google.com/apikey)
+- HuggingFace API key -> [Get free key](https://huggingface.co/settings/tokens)
 
 ### Installation
 ```bash
