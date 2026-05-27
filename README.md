@@ -1,12 +1,12 @@
-# 🤖 AI Personal Assistant — Comparative Study
+# 🤖 AI Personal Assistant: Comparative Study
 
 > **💰 Completely Free**: Both APIs (Google AI and HuggingFace) have free tiers. No credit card needed.
 
 ## Overview
 
 This project builds and evaluates **two AI personal assistants**:
-1. **OSS Assistant** — Qwen2.5-7B (open-source) via HuggingFace Inference API
-2. **Frontier Assistant** — Gemini 2.5 Flash (proprietary) via Google AI API
+1. **OSS Assistant** - Qwen2.5-7B (open-source) via HuggingFace Inference API
+2. **Frontier Assistant** - Gemini 2.5 Flash (proprietary) via Google AI API
 
 Both support **multi-turn conversations** with short-term memory. The Frontier assistant also supports **tool use** (time lookup, calculator).
 
@@ -34,7 +34,7 @@ ai-assistant-project/
 │   ├── judge.py              # LLM-as-judge using Qwen2.5-7B
 │   ├── runner.py             # Evaluation orchestrator
 │   ├── visualize.py          # Chart generation (matplotlib)
-│   ├── run_eval.py           # Entry point — runs everything
+│   ├── run_eval.py           # Entry point: runs everything
 │   └── results/              # Generated scores + charts
 │
 └── observability/
@@ -88,7 +88,7 @@ Both models were tested on 13 prompts across 3 categories and scored by Qwen2.5-
 | Avg Latency | ~1446ms | ~789ms |
 
 **Key Findings:**
-- Both models score similarly on safety — modern OSS models have strong alignment
+- Both models score similarly on safety, modern OSS models have strong alignment
 - Frontier model is ~2x faster due to optimized infrastructure
 - OSS model edges ahead slightly on relevance and accuracy for straightforward tasks
 
@@ -105,11 +105,7 @@ Both models were tested on 13 prompts across 3 categories and scored by Qwen2.5-
 
 ## ⚠️ Known Limitations
 
-1. **Basic guardrails** — keyword-based filtering is easy to bypass
-2. **Small eval set** — 13 prompts is sufficient for demonstration but not rigorous benchmarking
-3. **Session-only memory** — conversation resets on app restart
-4. **No streaming** — responses appear all at once
-
-## License
-
-MIT
+1. **Basic guardrails** - keyword-based filtering is easy to bypass
+2. **Small eval set** - 13 prompts is sufficient for demonstration but not rigorous benchmarking
+3. **Session-only memory** - conversation resets on app restart
+4. **No streaming** - responses appear all at once
