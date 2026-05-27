@@ -1,0 +1,29 @@
+# google-genai - Official Google AI SDK for Gemini API (Frontier model)
+# This is the unified SDK that replaced the older google-generativeai package.
+# We need it for the Frontier assistant and the LLM judge.
+# COMPLETELY FREE — no credit card needed!
+google-genai>=1.0.0
+
+# streamlit - Web UI framework for building chat interfaces
+# Why Streamlit? It has built-in chat components (st.chat_message) and
+# handles the web server for us. Alternative: Gradio, but Streamlit gives more control.
+streamlit>=1.40.0
+
+# requests - HTTP library for calling HuggingFace Inference API
+# We use this instead of huggingface_hub because it's more transparent —
+# you can see exactly what HTTP request is being made.
+requests>=2.31.0
+
+# python-dotenv - Loads API keys from .env file into environment variables
+# Why? So we never hardcode secrets in source code.
+python-dotenv>=1.0.0
+
+# matplotlib - Chart generation for evaluation results
+# Used to create bar charts and radar charts comparing both models.
+matplotlib>=3.8.0
+
+# pandas - Data manipulation (used in observability analysis)
+pandas>=2.1.0
+
+# huggingface_hub - HuggingFace utilities (backup, not primary)
+huggingface_hub>=0.25.0
